@@ -1,0 +1,90 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box; /*to avoid overflows*/
+}
+
+nav {
+	background-color: lightyellow;
+	height: 100%;
+	width: 200px;
+	float: left;
+	position: fixed;
+}
+
+main {
+	background-color: lightgrey;
+	margin-left: 200px;
+	/*width: 100%;*/
+	/*float: left;*/
+}
+
+.banner {
+	background-color: skyblue;
+	height: 700px;
+	position: relative;
+}
+
+.about {
+	background-color: indianred;
+	height: 700px;
+}
+
+.services {
+	background-color: midnightblue;
+	height: 300px;
+}
+
+.projects {
+	background-color: crimson;
+	height: 300px;
+
+}
+
+.gallery {
+	background-color: orange;
+	height: 400px;
+}
+
+footer {
+	background-color: green;
+}
+
+nav,
+.banner,
+.about,
+.services,
+.projects,
+.gallery,
+.footer {
+	padding: 30px;
+}
+
+.logo {
+	width: 140px;
+	height: 140px;
+	background-color: grey;
+	margin: 0 auto; /*centers the element*/
+}
+
+ul > li {
+	list-style: none;
+	background-color: lightblue;
+	text-align: center;
+	margin-bottom: 2px;
+	line-height: 48px;
+}
+ul > li > a {
+	text-decoration: none;
+}
+
+.box {
+	border: 5px solid white;
+	text-align: center;
+	width: 40%;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
