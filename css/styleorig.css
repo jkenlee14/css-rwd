@@ -1,18 +1,24 @@
-/* General Rules */
-
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box; /*to avoid overflows*/
 }
 
+body {
+	width: 100%;
+}
+
 nav {
 	background-color: lightyellow;
+	height: 100%;
+	width: 200px; /*for tablet up*/
+	float: left; /***/
 	position: fixed;
 }
 
 main {
 	background-color: lightgrey;
+	margin-left: 200px;  /***/
 }
 
 .banner {
@@ -23,22 +29,27 @@ main {
 
 .about {
 	background-color: indianred;
+	/*height: 700px;*/
 	min-height: 300px;
 }
 
 .services {
 	background-color: midnightblue;
+	/*height: 300px;*/
 	min-height: 300px;
 	color: white;
 }
 
 .projects {
 	background-color: crimson;
+	/*height: 300px;*/
 	min-height: 300px;
+
 }
 
 .gallery {
 	background-color: orange;
+	/*height: 400px;*/
 	min-height: 400px;
 }
 
@@ -61,7 +72,7 @@ footer {
 	width: 140px;
 	height: 140px;
 	background-color: grey;
-	margin: 0 auto;
+	margin: 0 auto; /*centers the element*/
 }
 
 ul > li {
@@ -88,14 +99,13 @@ ul > li > a {
 
 .column {
 	border: 1px solid white;
-	/*width: 31%;*/
-	/*float: left;*/
+	width: 31%;
+	float: left;
 	margin-left: 1%;
 	margin-right: 1%;
 	padding: 10px;
 
 }
-
 .clear:after {
 	content: "";
 	display: block;
@@ -120,10 +130,9 @@ img[alt*="Services"] ~ p {
 }
 
 .gallery > .column {
-	/*width: 23%;*/
+	width: 23%;
 	margin: 0 1%;
 	border-color: black;
-	margin: 5px;
 
 }
 
@@ -139,88 +148,10 @@ img[alt*="Social"] {
 	width: 20px;
 	height: 20px;
 	border: 1px solid black;
+	float: left;
 	margin-right: 10px;
 }
 
-
-/* mobile */
-@media only screen and (max-width: 400px) {
-	nav {
-		width: 100%;
-		position: static;
-	}
-	footer {
-		text-align: center;
-	}
-	.column {
-		margin: 1% 1%;
-	}
-
-	.gallery > .column {
-		margin: 1% 1%;
-		
-	}
-	img[alt*="Social"] {
-		display: inline-block;
-	}
+div.contact {
+	float: right;
 }
-
-/* tablet */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-	nav {
-		width: 200px;
-		float: left;
-	}
-	main {
-		margin-left: 200px;
-	}
-		.column {
-			margin: 1% 1%;
-		}
-		.gallery > .column {
-		width: 47%;
-		margin: 1% 1%;
-		border-color: black;
-		float: left;
-	}
-		footer {
-		text-align: left;
-	}
-		img[alt*="Social"] {
-		display: inline-block;
-		float: right;
-	}
-
-}
-
- /* desktop */
-@media only screen and (min-width: 961px) {
-	nav {
-		width: 200px;
-		float: left;
-	}
-	main {
-		margin-left: 200px;
-	}
-		.column	{
-			width: 31%;
-			margin: 1% 1%;
-			float: left;
-		}
-		.gallery > .column {
-		width: 23%;
-		margin: 1% 1%;
-		border-color: black;
-		float: left;
-		}
-		footer {
-		text-align: left;
-		}
-		img[alt*="Social"] {
-		display: inline-block;
-		float: right;
-		}
-
-	
-}
-
